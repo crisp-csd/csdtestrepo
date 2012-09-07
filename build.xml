@@ -1,0 +1,10 @@
+<project name="crisp-csd" default="war">
+
+
+	<target name="war">
+		<war destfile="crisp-csd.war" webxml="WEB-INF/web.xml">
+		  <fileset dir="."/>
+		</war>
+	</target>
+
+</project>
