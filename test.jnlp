@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?> 
-<jnlp spec="1.0+" codebase="http://localhost:8080/" href="Test.jnlp">
+<jnlp spec="1.0+" codebase="http://welcome.crisp-csd.cloudbees.net/" href="test.jnlp">
 	<information>
 		<title>Jnlp Testing</title>
 		<vendor>Henrik</vendor>
