@@ -1,3 +1,5 @@
 <web-app>
-	<welcome-file>MyNameIs.txt</welcome-file>
+	<welcome-file-list>
+		<welcome-file>MyNameIs.txt</welcome-file>
+	</welcome-file-list>
 </web-app>
