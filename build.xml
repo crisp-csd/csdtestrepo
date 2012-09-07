@@ -1,10 +1,21 @@
-<project name="crisp-csd" default="war">
+<project name="crisp-csd" default="build">
 	
 	<target name="war">
 		<delete file="crisp-csd.war"/>
 		<war destfile="crisp-csd.war" webxml="WEB-INF/web.xml" excludes="build.xml">
 		  <fileset dir="."/>
 		</war>
+	</target>
+	
+	<target name="jar">
+		<delete file="crisp-csd.jar"/>
+		<delete dir="tmp"/>
+		<mkdir dir="tmp"/>
+		<javac srcdir="samplejar" destdir="tmp" includes="*"/>
+		<jar destfile="crisp-csd.jar" basedir="tmp" includes="**" manifest="samplejar/META-INF/MANIFEST.MF"/>
+	</target>
+	
+	<target name="build" depends="war, jar">
 	</target>
 
 </project>
